@@ -1,0 +1,13 @@
+1.新建java项目
+
+2.导入核心jar包
+	① mybatis与spring整合包
+		mybatis-spring-1.2.4.jar
+	
+	② dbcp数据库连接池
+		commons-dbcp-1.4.jar
+		commons-pool-1.4.jar
+		
+	③ mybatis 与  spring 框架各自核心包
+	
+3.
