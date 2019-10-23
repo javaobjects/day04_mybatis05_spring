@@ -41,6 +41,10 @@
          		<property name="configLocation" value="classpath:sqlMapConfig.xml"></property><!-- mybatis核心配置文件 -->
          </bean>
                 
+         <!-- 3.1 配置SqlSessionTemplate,可省略-->
+         <bean id="sqlSessionTemplate" class="org.mybatis.spring.SqlSessionTemplate">
+         	 	<constructor-arg ref="factory"></constructor-arg>
+         </bean>       
          <!-- 4. 管理DAO（原始DAO开发方式） -->          
 	     <bean id="empDao" class="com.tencent.dao.EmpDaoImpl">
 	     	<constructor-arg index="0" ref="factory"/>
